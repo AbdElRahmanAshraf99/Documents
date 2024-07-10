@@ -1,5 +1,6 @@
-### 1. What is the difference between Localstorage and Cookies?
-
+<h3> 1. What is the difference between Localstorage and Cookies?</h3>
+<details>
+<summary>Answer</summary>
 - Both are commonly used for storing data on the client side in web applications, but they serve different purposes and have different
   characteristics that will be discussed below.
 
@@ -36,4 +37,4 @@
   Scripting) attacks.
 - <strong>Cookies:</strong> Cookies can be flagged as 'HttpOnly', making them inaccessible via JavaScript and helping to protect against XSS attacks.
 
-
+</details>
