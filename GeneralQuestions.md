@@ -1,4 +1,4 @@
-<h3> 1. What is the difference between Localstorage and Cookies?</h3>
+<h3 id="q1"> 1. Localstorage vs. Cookies</h3>
 <details>
 <summary>Answer</summary>
 - Both are commonly used for storing data on the client side in web applications, but they serve different purposes and have different
