@@ -132,3 +132,11 @@
 7. Web Applications Firewall
    - It protects web applications by filtering and monitoring HTTP traffic between a web application and the Internet.
 </details>
+<h3 id="q8"> 8. What is HTTPS?</h3>
+<details>
+<summary>Answer</summary>
+
+- HTTPS stands for Hypertext Transfer Protocol Secure.
+- It's used to encrypt and decrypt user HTTP page or requests that are returned by the webserver.
+
+</details>
