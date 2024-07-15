@@ -82,18 +82,53 @@
 <summary>Answer</summary>
 
 1. HTTPS
-  - It is the secure version of HTTP, which communications between client and server are encrypted using TLS (Transport Layer Security).
-  - It uses SSL/TLS to encrypt data before it's sent over the network, it can't be read by unauthorized parties.
+   - It is the secure version of HTTP, which communications between client and server are encrypted using TLS (Transport Layer Security).
+   - It uses SSL/TLS to encrypt data before it's sent over the network, it can't be read by unauthorized parties.
 
 2. HSTS
 
-- It is a security policy mechanism that helps to protect websites against man-in-the-middle attacks such as protocol downgrade attacks and cookie
-  hijacking.
-- The server sets an HSTS policy in the browser through a response header, which forces the browser to only interact with the server over HTTPS for a
-  specified period.
+   - It is a security policy mechanism that helps to protect websites against man-in-the-middle attacks such as protocol downgrade attacks and cookie
+     hijacking.
+   - The server sets an HSTS policy in the browser through a response header, which forces the browser to only interact with the server over HTTPS
+     for a specified period.
 
 3. Secure HTTP Headers
 
-- Content Security Policy (CSP)
-  - prevents a wide range 
+   - Content Security Policy (CSP)
+     - allows you to restrict the sources from which the browser can load resources.
+     - helps prevent XSS attacks by specifying which content is allowed to execute on a webpage.
+   - X-Content-Type Options
+     - prevents browsers from MIME-sniffing a response away from the declared content-type.
+     - reduces the risk of certain types of attacks like XSS attacks.
+   - X-Frame Options
+     - controls whether a browser should be allowed to render a page in a `<iframe>`, `<frame>`, `<object>`, or `<embed>` tag.
+     - helps to prevent clickjacking attacks.
+
+4. Authentication and Authorization
+
+   - OAuth
+     - is an open standard for access delegation, commonly used as a way to grant applications limited access to user information without exposing
+       passwords.
+   - JWT (JSON Web Token)
+     - is a compact,URL-safe means of representing claims to be transferred between two parties often used for authentication and information
+       exchange.
+   - Basic and Digest Authentication
+     - Basic sends user credentials in an encoded form, while Digest sends a hashed version of credentials.
+
+5. Secure Cookies
+
+   - Secure Attribute
+     - ensures that cookies are only sent over HTTPS connections.
+   - HTTPOnly Attribute
+     - prevents client-side scripting from accessing the cookies, mitigating XSS attacks.
+   - SameSite Attribute
+     - prevents the browser from sending the cookies along with cross-site requests, helping to protect against CSRF attacks.
+
+6. Data Encryption
+
+   - End-to-End Encryption
+   - Database Encryption
+
+7. Web Applications Firewall
+   - It protects web applications by filtering and monitoring HTTP traffic between a web application and the Internet.
 </details>
